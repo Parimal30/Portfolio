@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+    font-size: 25px;
+    color: rgb(23, 68, 146);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 90px;
+}
+
+.home {
+    height: 100vh;
+    background: linear-gradient(-90deg,rgb(111, 188, 63) 65%,white 35%);
+    display: flex;
+    align-items: center;
+    padding: 250px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-content {
+    color: rgb(40, 137, 124);
+    text-align: center;
+}
+
+.home-content h1{
+    font-size: 30px;
+    line-height: 1.2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home-content h2{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-content p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.contact {
+    background-color: #0d3a05;
+    padding: 10px;
+    align-items: center;
+    width: 500px;
+}
+
+.contact-form {
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: #a2c0b5;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adds some spacing above the images */
+}
+
+.contact-icon {
+    text-align: center;
+    margin: 0 20px; /* Adds space between each image */
+}
+
+.contact-icon img {
+    height: 50px; /* Adjust the height of the images */
+    width: 50px;  /* Adjust the width of the images */
+    object-fit: contain; /* Ensures the image aspect ratio is maintained */
+    margin-bottom: 10px; /* Adds some space between image and text */
+}
+
+.contact-icon p {
+    font-size: 16px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 868px){
+    .home{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header ul{
+        flex-direction: column;
+    }
+
+    header nav li{
+        width: 100%;
+    }
+}
+
+
